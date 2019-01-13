@@ -195,6 +195,18 @@ ul {
         height: auto;
     }
 
+    .titulo {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 0.9em;
+    }
+
+    .titulo-2 {
+        font-size: 27px;
+    }
+
     .logos-sociales {
         margin-bottom: 4px;
     }
