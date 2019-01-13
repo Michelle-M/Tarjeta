@@ -1,0 +1,227 @@
+/*-----TARJETA GENERAL-----*/
+
+.contenedor {
+   width: 900px;
+   height: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 150px;
+   display: flex;
+   background-image: url("fondo-01.png");
+   background-size: 900px 400px;
+   border-radius: 20px;
+}
+
+/*-----CAJA FOTO-----*/
+
+.contenedor-foto {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border: 2px solid rgba(87,71,57,1);
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+/*-----CONTENEDOR DERECHO-----*/
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----CONTENEDOR TEXTOS-----*/
+
+.textos {
+    width: 600px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*-----PRIMER CAJA IZQUIERDA-----*/
+
+.texto-1 {
+    width: 250px;
+    height: 175px;
+    background-color: #42B1A4;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 2px -2px rgba(87,71,57,1);
+    
+}
+
+.titulo {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+/*-----SEGUNDA CAJA DERECHA-----*/
+
+.texto-2 {
+    width: 250px;
+    height: 175px;
+    background-color: #42B1A4;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 2px -2px rgba(87,71,57,1);
+}
+
+.titulo-2 {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 35px;
+    color: white;
+}
+
+/*-----ESTILO DE ICONOS Y LINKS-----*/
+
+.fa {
+    padding: 18px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa-twitter, .fa-linkedin, .fa-instagram, .fa-google, .fa-github, .fa-pinterest {
+    background: #ABFDF4;
+    color: #42B1A4;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+/*-----CONTENEDOR IMAGENES-----*/
+
+.tira-imagenes {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-3 {
+    font-family: 'Euphoria Script';
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 0 0 #AA8566, -2px 0 0 #AA8566, 0 2px 0 #AA8566, 0 -2px 0 #AA8566, 1px 1px #AA8566, -1px -1px 0 #AA8566, 1px -1px 0 #AA8566, -1px 1px 0 #AA8566;
+}
+
+.imagenes {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.imagen1, .imagen2, .imagen3, .imagen4, .imagen5 {
+    width: 90px;
+    height: 90px;
+    border-radius: 25%;
+    box-shadow: 7px 7px 4px -4px rgba(87,71,57,1);
+}
+
+.top, .bottom {
+    width: 210px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------MEDIA QUERYES-----*/
+
+@media screen and (max-width: 480px) {
+
+    .contenedor {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-top: 0;
+        border-radius: none;
+    }
+
+    .contenedor-foto {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .textos {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .texto-1, .texto-2 {
+        width: 45%;
+        height: auto;
+    }
+
+    .logos-sociales {
+        margin-bottom: 4px;
+    }
+
+    .tira-imagenes {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .imagen1, .imagen2, .imagen3, .imagen4, .imagen5 {
+        width: 140px;
+        height: 140px;
+        margin-top: 10px;
+    }
+
+    .imagenes {
+        align-content: space-around;
+    }
+
+    .top, .bottom {
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+
+}
+
+
+
