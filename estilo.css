@@ -1,11 +1,20 @@
-/*-----TARJETA GENERAL-----*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 .contenedor {
+    height: 100vh; /*--Alto visible--*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----TARJETA GENERAL-----*/
+
+.tarjeta {
    width: 900px;
    height: 400px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 10%;
    display: flex;
    background-image: url("fondo-01.png");
    background-size: 900px 400px;
@@ -15,16 +24,16 @@
 /*-----CAJA FOTO-----*/
 
 .contenedor-foto {
-    width: 300px;
-    height: 400px;
+    width: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .foto {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 2px solid rgba(87,71,57,1);
 }
@@ -37,6 +46,8 @@
 /*-----CONTENEDOR DERECHO-----*/
 
 .descripcion {
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -147,7 +158,6 @@ ul {
 .imagenes {
     margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; 
 }
@@ -171,6 +181,10 @@ ul {
 @media screen and (max-width: 480px) {
 
     .contenedor {
+        height: auto;
+    }
+
+    .tarjeta {
         width: 100%;
         height: auto;
         flex-direction: column;
@@ -182,6 +196,16 @@ ul {
         width: 100%;
         height: auto;
         margin-top: 40px;
+    }
+
+    .foto {
+        width: 240px;
+        height: 240px;
+    }
+
+    .descripcion {
+        width: 100%;
+        height: auto;
     }
 
     .textos {
@@ -225,6 +249,7 @@ ul {
 
     .imagenes {
         align-content: space-around;
+        flex-direction: column;
     }
 
     .top, .bottom {
